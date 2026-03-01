@@ -1,48 +1,87 @@
 {
   "name": "npm-test-shrinkwrap",
   "version": "0.0.0",
-  "dependencies": {
-    "npm-test-single-file": {
-      "version": "1.2.3",
-      "resolved": "https://gist.github.com/isaacs/1837112/raw/9ef57a59fc22aeb1d1ca346b68826dcb638b8416/index.js"
-    },
-    "glob": {
-      "version": "3.1.5",
-      "resolved": "git://github.com/isaacs/node-glob.git#67bda227fd7a559cca5620307c7d30a6732a792f",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "version": "0.0.0",
       "dependencies": {
-        "minimatch": {
-          "version": "0.2.1",
-          "dependencies": {
-            "lru-cache": {
-              "version": "1.0.5"
-            }
-          }
-        },
-        "graceful-fs": {
-          "version": "1.1.5",
-          "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-1.1.5.tgz",
-          "dependencies": {
-            "fast-list": {
-              "version": "1.0.2",
-              "resolved": "https://registry.npmjs.org/fast-list/-/fast-list-1.0.2.tgz"
-            }
-          }
-        },
-        "inherits": {
-          "version": "1.0.0",
-          "resolved": "https://registry.npmjs.org/inherits/-/inherits-1.0.0.tgz"
-        }
+        "glob": "git://github.com/isaacs/node-glob.git#npm-test",
+        "minimatch": "~0.1.0",
+        "npm-test-single-file": "https://gist.github.com/isaacs/1837112/raw/9ef57a59fc22aeb1d1ca346b68826dcb638b8416/index.js"
       }
     },
-    "minimatch": {
+    "node_modules/glob": {
+      "version": "3.1.5",
+      "resolved": "git+ssh://git@github.com/isaacs/node-glob.git#67bda227fd7a559cca5620307c7d30a6732a792f",
+      "integrity": "sha512-iZA8FyYy1veSBXA5OGs0NpZXwnZPwM4DeB8aJ3eOpT+iE57scGN4nkj6FRIVAKaVZ/2CZgOq98pdlFxks1Wc3w==",
+      "bundleDependencies": [
+        "minimatch"
+      ],
+      "dependencies": {
+        "graceful-fs": "~1.1.2",
+        "inherits": "1",
+        "minimatch": "0.2"
+      },
+      "engines": {
+        "node": "*"
+      }
+    },
+    "node_modules/glob/node_modules/graceful-fs": {
+      "version": "1.1.5",
+      "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-1.1.5.tgz",
+      "integrity": "sha512-dCktlWOQ5aKKs3vMS8RENFzcARKPdOczzkcZRnxVTniAx5221IAJYhzjZUKnYhhbuu6xAZcMoABBIdVZmDB/6g==",
+      "deprecated": "please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js",
+      "dependencies": {
+        "fast-list": "1"
+      },
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/glob/node_modules/graceful-fs/node_modules/fast-list": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/fast-list/-/fast-list-1.0.2.tgz",
+      "integrity": "sha512-pATOw4Bx/xL3LUISw9ANnD/+15Gpky/EaeNbTSzBM2fIxu9E34dtg/SmR5UKLG1YKltn0JkZm6O3URknAD+2oQ==",
+      "engines": {
+        "node": "*"
+      }
+    },
+    "node_modules/glob/node_modules/inherits": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/inherits/-/inherits-1.0.0.tgz",
+      "integrity": "sha512-5KfXESjCAfFQel2TLqhr18NEz++UiWVIA0jwHzs2Kbvb3e+r+G/eVhRfoZbaPCL0PnERvK5YeMgh02O4eenufw==",
+      "engines": {
+        "node": "*"
+      }
+    },
+    "node_modules/glob/node_modules/minimatch": {
+      "version": "0.2.1",
+      "inBundle": true
+    },
+    "node_modules/minimatch": {
       "version": "0.1.5",
       "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-0.1.5.tgz",
+      "integrity": "sha512-KFPxSmc7KgXLngf9Y6mZmg+uCySJ/rqeLkHbZK+ygcPtzQvN9XGBbgFMPO8pfFYEKFgOUAE0RmXFIQtoRc7VHg==",
+      "deprecated": "Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue",
       "dependencies": {
-        "lru-cache": {
-          "version": "1.0.5",
-          "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-1.0.5.tgz"
-        }
+        "lru-cache": "~1.0.5"
+      },
+      "engines": {
+        "node": "*"
       }
+    },
+    "node_modules/minimatch/node_modules/lru-cache": {
+      "version": "1.0.5",
+      "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-1.0.5.tgz",
+      "integrity": "sha512-78LsxOtsCtZe6QOYdrBnSlI8j0r7bal9Les5ZQH0njXtAuKLQpwd2UOTe0+r0CzKsDeH/ujYXJNCswYj6Mq9Tg==",
+      "engines": {
+        "node": "*"
+      }
+    },
+    "node_modules/npm-test-single-file": {
+      "resolved": "https://gist.github.com/isaacs/1837112/raw/9ef57a59fc22aeb1d1ca346b68826dcb638b8416/index.js"
     }
   }
 }
